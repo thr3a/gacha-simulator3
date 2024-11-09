@@ -18,7 +18,7 @@ export const AttemptsInput = (): JSX.Element => {
         label='ガチャを試す回数'
         data={attemptList()}
         value={form.values.attempts.toString()}
-        onChange={(value, option) => {
+        onChange={(value) => {
           if (value !== null) {
             form.setFieldValue('attempts', Number(value));
           }
