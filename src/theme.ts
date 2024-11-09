@@ -22,11 +22,11 @@ export const theme = createTheme({
           fontWeight: 'bold'
         },
         root: {
-          // marginBottom: theme.spacing.xs,
-          // fontSize: '16px'
+          marginBottom: theme.spacing.xs,
+          fontSize: '16px'
         },
         input: {
-          // fontSize: '16px'
+          fontSize: '16px'
         }
       })
     },
@@ -58,7 +58,7 @@ export const theme = createTheme({
       })
     },
     DatePicker: {
-      styles: (theme: MantineTheme) => ({
+      styles: () => ({
         label: {
           fontWeight: 'bold'
         },
@@ -68,7 +68,7 @@ export const theme = createTheme({
       })
     },
     Select: {
-      styles: (theme: MantineTheme) => ({
+      styles: () => ({
         label: {
           fontWeight: 'bold'
         }
