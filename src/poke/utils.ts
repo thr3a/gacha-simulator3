@@ -96,16 +96,16 @@ export class PokeGacha {
 }
 
 // 使用例
-const gacha = new PokeGacha('d4', 1);
+// const gacha = new PokeGacha('d4', 10);
 
-console.log('使用例:');
-console.log('1回以上d4が出る確率:', gacha.getAtLeastOneProbability());
-console.log('1回以上特定のd4が出る確率:', gacha.getAtLeastOneProbability(true));
-console.log('d4が1枚も出ない確率:', gacha.getZeroProbability());
-console.log('特定のd4が1枚も出ない確率:', gacha.getZeroProbability(true));
-console.log('d4がちょうど2枚出る確率:', gacha.getExactlyXProbability(1));
-console.log('特定のd4がちょうど2枚出る確率:', gacha.getExactlyXProbability(2, true));
-console.log('d4が3回以上出る確率:', gacha.getAtLeastXProbability(3));
-console.log('特定のd4が3回以上出る確率:', gacha.getAtLeastXProbability(3, true));
-console.log('80%の確率でd4が出るのに必要なパック数:', gacha.getPacksNeededForProbability(90));
-console.log('80%の確率で特定のd4が出るのに必要なパック数:', gacha.getPacksNeededForProbability(90, true));
+// console.log('使用例:');
+// console.log('1回以上d4が出る確率:', gacha.getAtLeastOneProbability());
+// console.log('1回以上特定のd4が出る確率:', gacha.getAtLeastOneProbability(true));
+// console.log('d4が1枚も出ない確率:', gacha.getZeroProbability());
+// console.log('特定のd4が1枚も出ない確率:', gacha.getZeroProbability(true));
+// console.log('d4がちょうど2枚出る確率:', gacha.getExactlyXProbability(1));
+// console.log('特定のd4がちょうど2枚出る確率:', gacha.getExactlyXProbability(2, true));
+// console.log('d4が3回以上出る確率:', gacha.getAtLeastXProbability(3));
+// console.log('特定のd4が3回以上出る確率:', gacha.getAtLeastXProbability(3, true));
+// console.log('80%の確率でd4が出るのに必要なパック数:', gacha.getPacksNeededForProbability(90));
+// console.log('80%の確率で特定のd4が出るのに必要なパック数:', gacha.getPacksNeededForProbability(90, true));
