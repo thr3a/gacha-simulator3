@@ -1,6 +1,7 @@
 import { List, Space, Table, Text } from '@mantine/core';
 import { roundDecimal } from 'decimal-utils';
 import { useFormContext } from './Form';
+import { ResultChart } from './ResultChart';
 import { Gacha } from './utils';
 // const ResultChart = dynamic(async () => await import('@/features/form/ResultChart'), { ssr: false });
 
@@ -61,12 +62,12 @@ export const Result = (): JSX.Element => {
 
       <Space h={'md'} />
 
-      {/* <ResultChart
+      <ResultChart
         data={[0, 1, 2, 3, 4, 5].map((hit) => ({
           count: hit,
           prob: roundDecimal(gacha.SuccessProbByHit(hit) * 100, 2)
         }))}
-      /> */}
+      />
 
       <Table stickyHeader stickyHeaderOffset={60} striped withTableBorder withColumnBorders withRowBorders={false}>
         <Table.Thead>
