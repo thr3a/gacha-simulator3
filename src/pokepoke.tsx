@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         </Anchor>
 
         <Title order={6} mb={'md'} c={'dimmed'}>
-          スマホゲームなどのガチャ確率計算ツール
+          ポケポケのガチャの確率を計算します。
         </Title>
 
         <GachaForm />
