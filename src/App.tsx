@@ -8,7 +8,7 @@ export default function App() {
       <Container>
         <Anchor href='/'>
           <Title mt={'md'} order={2}>
-            ガチャシュミレーター
+            ガチャシミュレーター
           </Title>
         </Anchor>
 

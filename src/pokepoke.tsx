@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Container>
         <Anchor href='/'>
           <Title mt={'md'} order={2}>
-            ポケポケ ガチャシュミレーター
+            ポケポケ ガチャシミュレーター
           </Title>
         </Anchor>
 
