@@ -1,4 +1,4 @@
-import { type MantineTheme, createTheme } from '@mantine/core';
+import { createTheme } from '@mantine/core';
 import { themeToVars } from '@mantine/vanilla-extract';
 
 export const theme = createTheme({
@@ -7,22 +7,18 @@ export const theme = createTheme({
   fontFamily: '"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
   components: {
     TextInput: {
-      styles: (theme: MantineTheme) => ({
+      styles: () => ({
         label: {
           fontWeight: 'bold'
-        },
-        root: {
-          marginBottom: theme.spacing.xs
         }
       })
     },
     Textarea: {
-      styles: (theme: MantineTheme) => ({
+      styles: () => ({
         label: {
           fontWeight: 'bold'
         },
         root: {
-          marginBottom: theme.spacing.xs,
           fontSize: '16px'
         },
         input: {
@@ -31,29 +27,16 @@ export const theme = createTheme({
       })
     },
     NumberInput: {
-      styles: (theme: MantineTheme) => ({
+      styles: () => ({
         label: {
           fontWeight: 'bold'
-        },
-        root: {
-          marginBottom: theme.spacing.xs
         }
       })
     },
     RadioGroup: {
-      styles: (theme: MantineTheme) => ({
+      styles: () => ({
         label: {
           fontWeight: 'bold'
-        },
-        root: {
-          marginBottom: theme.spacing.xs
-        }
-      })
-    },
-    Checkbox: {
-      styles: (theme: MantineTheme) => ({
-        root: {
-          marginBottom: theme.spacing.sm
         }
       })
     },

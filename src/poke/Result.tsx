@@ -1,7 +1,6 @@
 import { List, Space, Table, Text } from '@mantine/core';
 import { roundDecimal } from 'decimal-utils';
 import { useFormContext } from './Form';
-// import { ResultChart } from './ResultChart';
 import { PokeGacha, type Rarity } from './utils';
 
 const formatProb = (prob: number): string => {

@@ -5,7 +5,7 @@ import { theme } from './theme';
 export default function App() {
   return (
     <MantineProvider theme={theme}>
-      <Container>
+      <Container maw={600}>
         <Anchor href='/'>
           <Title mt={'md'} order={2}>
             ガチャシミュレーター

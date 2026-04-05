@@ -1,8 +1,12 @@
-import { Box, Space } from '@mantine/core';
+import { Box, Stack } from '@mantine/core';
 import { createFormContext } from '@mantine/form';
+import { useEffect } from 'react';
 import { AttemptsInput } from './AttemptsInput';
 import { ProbInput } from './ProbInput';
 import { Result } from './Result';
+import { ShareButton } from './ShareButton';
+
+const TITLE = 'ガチャシミュレーター';
 
 type GachaFormProps = {
   prob: number;
@@ -23,15 +27,41 @@ export function GachaForm() {
     }
   });
 
+  useEffect(() => {
+    try {
+      // adsbygoogle は AdSense スクリプトが window に追加するグローバル変数のため
+      // unknown 経由でキャストして型安全にアクセスする
+      const w = window as unknown as Record<string, unknown[]>;
+      w.adsbygoogle = w.adsbygoogle || [];
+      w.adsbygoogle.push({});
+    } catch (_e) {
+      // 広告ブロック等で失敗しても無視
+    }
+  }, []);
+
   return (
     <FormProvider form={form}>
-      <Box mx='auto' component='form' maw={400}>
+      <Stack>
         <ProbInput />
-        <Space h='md' />
         <AttemptsInput />
-        <Space h='md' />
+        {/* ads */}
+        <Box ta='center'>
+          <ins
+            className='adsbygoogle'
+            style={{ display: 'block' }}
+            data-ad-client='ca-pub-4713051297575097'
+            data-ad-slot='9918607879'
+            data-ad-format='auto'
+            data-full-width-responsive='true'
+          />
+        </Box>
         <Result />
-      </Box>
+
+        {/* シェアボタン */}
+        <Box ta='center' py='lg'>
+          <ShareButton title={TITLE} />
+        </Box>
+      </Stack>
     </FormProvider>
   );
 }

@@ -1,5 +1,4 @@
 import { Button, Group, TextInput } from '@mantine/core';
-// import { useEffect } from 'react';
 import { PROB_PRESETS, useFormContext } from './Form';
 
 export const ProbInput = (): JSX.Element => {
@@ -16,9 +15,6 @@ export const ProbInput = (): JSX.Element => {
         {PROB_PRESETS.map((prob, index) => (
           <Button
             p={'xs'}
-            // sx={(theme) => ({
-            //   padding: theme.spacing.xs
-            // })}
             key={index}
             variant='outline'
             onClick={() => {
